@@ -67,6 +67,6 @@ func main() {
 		batchSizeInt = math.MaxInt32
 	}
 
-	fmt.Println("\nget all messages:")
+	fmt.Println("\nget "+ strconv.Itoa(batchSizeInt) +" messages:")
 	GetMessage(batchSizeInt, client)
 }
