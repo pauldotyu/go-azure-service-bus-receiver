@@ -68,5 +68,9 @@ func main() {
 	}
 
 	fmt.Println("\nget "+ strconv.Itoa(batchSizeInt) +" messages:")
-	GetMessage(batchSizeInt, client)
+
+	// loop to get messages
+	for {
+		GetMessage(batchSizeInt, client)
+	}
 }
